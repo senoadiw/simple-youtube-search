@@ -1,9 +1,9 @@
 import React from 'react';
 import { Header } from 'react-native-elements';
 
-const AppHeader = (props) => (
+const AppHeader = ({ headerText }) => (
     <Header
-        centerComponent={{ text: props.headerText, style: { color: '#fff' } }}
+        centerComponent={{ text: headerText, style: { color: '#fff' } }}
         outerContainerStyles={{ backgroundColor: '#e62117' }}
     />
 );

@@ -3,6 +3,7 @@ import { View } from 'react-native';
 import YTSearch from 'youtube-api-search';
 import AppHeader from './components/AppHeader';
 import SearchBar from './components/SearchBar';
+import VideoList from './components/VideoList';
 
 const API_KEY = 'AIzaSyCkYVWVBpcDINDrEOiwJl6cfi4sbyKbo-w';
 
@@ -34,7 +35,7 @@ export default class App extends Component {
           loading={this.state.loading}
           onPressSearch={this.onPressSearch}
         />
-        {/*videolist*/}
+        <VideoList videos={this.state.videos} />
       </View>
     );
   }
